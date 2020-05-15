@@ -1,3 +1,29 @@
 header {
+  height: 60px;
+  width: 100%;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 
+  .menuButton {
+    width: 25px;
+    top: 19px;
+    left: 20px;
+    position: absolute;
+  }
+
+  .logo {
+    width: 36px;
+    top: 10px;
+    left: calc(50% - 36px/2);
+    position: absolute;
+  }
+
+  .instagramButton {
+    width: 26px;
+    top: 17px;
+    right: 20px;
+    position: absolute;
+  }
 }

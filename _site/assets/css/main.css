@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -2568,22 +2569,250 @@ th {
 
 fonts
 
-*****************************************
-
-@font-face {
-    font-family: "neco";
-    src: url("../fonts/GothamRounded-Book.otf");
-}
-
-*****************************************
-
-colors
-
 *****************************************/
+@font-face {
+  font-family: "AvenirBlack";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-Black.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirBlackOblique";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-BlackOblique.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirBook";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-Book.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirBookOblique";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-BookOblique.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirHeavy";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-Heavy.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirHeavyOblique";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-HeavyOblique.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirLight";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-Light.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirLightOblique";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-LightOblique.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirMedium";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-Medium.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirMediumOblique";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-MediumOblique.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirOblique";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-Oblique.ttf");
+  /* propojení na umístění souboru */ }
+@font-face {
+  font-family: "AvenirRoman";
+  /* deklarace fontu */
+  src: url("../fonts/Avenir-Roman.ttf");
+  /* propojení na umístění souboru */ }
 /*****************************************
 
 defaults
 
 *****************************************/
 h1, h2, h3, h4, h5, p, span, a {
-  font-weight: normal !important; }
+  font-weight: normal !important;
+  font-family: AvenirBook;
+  text-decoration: none;
+  color: #000; }
+
+*:focus {
+  outline: none; }
+
+img {
+  max-width: 100%; }
+
+.button {
+  font-family: AvenirBlack;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 10px 20px;
+  background: #fff;
+  text-transform: uppercase; }
+
+header {
+  height: 60px;
+  width: 100%;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  z-index: 100; }
+  header .menuButton {
+    width: 25px;
+    top: 19px;
+    left: 20px;
+    position: absolute; }
+  header .logo {
+    width: 36px;
+    top: 10px;
+    left: calc(50% - 36px/2);
+    position: absolute; }
+  header .instagramButton {
+    width: 26px;
+    top: 17px;
+    right: 20px;
+    position: absolute; }
+
+.homepage {
+  background: #FBFBFB; }
+
+.jumbotron {
+  padding-top: 60px;
+  position: relative; }
+  .jumbotron .jumboTop {
+    background: url("../img/pozadi1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 440px;
+    text-align: center;
+    background-size: 120%; }
+    .jumbotron .jumboTop h1 {
+      margin: 0;
+      font-family: AvenirBlack;
+      font-size: 36px;
+      color: #000000;
+      text-align: center;
+      padding-top: 50px;
+      margin-bottom: 40px; }
+  .jumbotron .jumboBot {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    position: relative;
+    margin-top: -180px;
+    padding: 30px 0; }
+    .jumbotron .jumboBot ul {
+      padding: 0;
+      width: calc(100% - 60px);
+      margin: 0 auto; }
+      .jumbotron .jumboBot ul li {
+        list-style: none;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 30px;
+        width: fit-content; }
+        .jumbotron .jumboBot ul li:last-child {
+          margin-bottom: 0; }
+        .jumbotron .jumboBot ul li img {
+          position: absolute;
+          left: 0;
+          max-width: 40px;
+          max-height: 42px;
+          top: calc(50% - 21px); }
+        .jumbotron .jumboBot ul li div {
+          width: fit-content;
+          margin-left: 70px;
+          display: block; }
+          .jumbotron .jumboBot ul li div h3 {
+            font-family: AvenirHeavy;
+            font-size: 18px;
+            color: #000000;
+            letter-spacing: 0;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 4px; }
+          .jumbotron .jumboBot ul li div p {
+            font-family: AvenirMedium;
+            font-size: 14px;
+            color: #898989;
+            letter-spacing: 0;
+            text-align: left;
+            margin: 0; }
+
+.produkty h2 {
+  font-family: AvenirMedium;
+  font-size: 23px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 34px;
+  margin-top: 70px;
+  margin-bottom: 70px; }
+.produkty .produktyInner .piti .pitiInner {
+  background: #FFFFFF;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  width: 220px; }
+  .produkty .produktyInner .piti .pitiInner img {
+    height: 145px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 23px;
+    margin-bottom: 20px; }
+  .produkty .produktyInner .piti .pitiInner h3 {
+    font-family: AvenirMedium;
+    font-size: 23px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 34px;
+    margin: 0; }
+  .produkty .produktyInner .piti .pitiInner p {
+    font-family: AvenirMedium;
+    font-size: 14px;
+    color: #747474;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .produkty .produktyInner .piti .pitiInner a {
+    background: #F6BA5F;
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-family: AvenirHeavy;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .produkty .produktyInner .piti .pitiInner a:hover {
+      background: #D87745; }
+
+.slick-slide {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.slick-list {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.reference {
+  background: url("../img/pozadi3.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }

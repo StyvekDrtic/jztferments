@@ -11,7 +11,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 keywords: Lorem ipsum, dolor sit amet, consectetur adipiscing, elit, sed do
 author: palmmedia.co
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://palmmedia.co" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

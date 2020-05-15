@@ -1,3 +1,14 @@
+$('.carouselSlider').slick({
+  infinite: true,
+  variableWidth: true,
+  centerPadding: '70px',
+  dots: true,
+  autoplay: false,
+  autoplaySpeed: 3000,
+  centerMode: true,
+  arrows: false,
+});
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -34,3 +45,18 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+// slick
+
+$('.produktyInner').slick({
+  infinite: false,
+  variableWidth: true,
+  dots: false,
+  autoplay: false,
+  autoplaySpeed: 3000,
+  centerMode: true,
+  arrows: false,
+  initialSlide: 2,
+  centerPadding: '70px',
+});

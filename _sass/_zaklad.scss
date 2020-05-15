@@ -2,18 +2,27 @@
 
 fonts
 
-*****************************************
+*****************************************/
 
-@font-face {
-    font-family: "neco";
-    src: url("../fonts/GothamRounded-Book.otf");
+@mixin font-face($jmeno, $soubor) {
+  @font-face {
+      font-family: $jmeno; /* deklarace fontu */
+      src: url("../fonts/#{$soubor}"); /* propojení na umístění souboru */
+  }
 }
 
-*****************************************
-
-colors
-
-*****************************************/
+@include font-face("AvenirBlack", "Avenir-Black.ttf");
+@include font-face("AvenirBlackOblique", "Avenir-BlackOblique.ttf");
+@include font-face("AvenirBook", "Avenir-Book.ttf");
+@include font-face("AvenirBookOblique", "Avenir-BookOblique.ttf");
+@include font-face("AvenirHeavy", "Avenir-Heavy.ttf");
+@include font-face("AvenirHeavyOblique", "Avenir-HeavyOblique.ttf");
+@include font-face("AvenirLight", "Avenir-Light.ttf");
+@include font-face("AvenirLightOblique", "Avenir-LightOblique.ttf");
+@include font-face("AvenirMedium", "Avenir-Medium.ttf");
+@include font-face("AvenirMediumOblique", "Avenir-MediumOblique.ttf");
+@include font-face("AvenirOblique", "Avenir-Oblique.ttf");
+@include font-face("AvenirRoman", "Avenir-Roman.ttf");
 
 /*****************************************
 
@@ -23,5 +32,26 @@ defaults
 
 h1, h2, h3, h4, h5, p, span, a {
   font-weight: normal !important;
-  //font-family: book;
+  font-family: AvenirBook;
+  text-decoration: none;
+  color: #000;
+}
+
+*:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  font-family: AvenirBlack;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 10px 20px;
+  background: #fff;
+  text-transform: uppercase;
 }

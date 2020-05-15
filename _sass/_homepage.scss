@@ -1,0 +1,183 @@
+.homepage {
+  background: #FBFBFB;
+}
+
+.jumbotron {
+  padding-top: 60px;
+  position: relative;
+
+  .jumboTop {
+    background: url("../img/pozadi1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 440px;
+    text-align: center;
+    background-size: 120%;
+
+    h1 {
+      margin: 0;
+      font-family: AvenirBlack;
+      font-size: 36px;
+      color: #000000;
+      text-align: center;
+      padding-top: 50px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .jumboBot {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.14);
+    border-radius: 5px;
+    position: relative;
+    margin-top: -180px;
+    padding: 30px 0;
+
+    ul {
+      padding: 0;
+      width: calc(100% - 60px);
+      margin: 0 auto;
+
+      li {
+        list-style: none;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 30px;
+        width: fit-content;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        img {
+          position: absolute;
+          left: 0;
+          max-width: 40px;
+          max-height: 42px;
+          top: calc(50% - 21px);
+        }
+
+        div {
+          width: fit-content;
+          margin-left: 70px;
+          display: block;
+
+          h3 {
+            font-family: AvenirHeavy;
+            font-size: 18px;
+            color: #000000;
+            letter-spacing: 0;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 4px;
+          }
+
+          p {
+            font-family: AvenirMedium;
+            font-size: 14px;
+            color: #898989;
+            letter-spacing: 0;
+            text-align: left;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.produkty {
+  h2 {
+    font-family: AvenirMedium;
+    font-size: 23px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .produktyInner {
+
+    .piti {
+
+      .pitiInner {
+        background: #FFFFFF;
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,0.08);
+        border-radius: 5px;
+        width: 220px;
+
+        img {
+          height: 145px;
+          margin: 0 auto;
+          display: block;
+          padding-top: 23px;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          font-family: AvenirMedium;
+          font-size: 23px;
+          color: #000000;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 34px;
+          margin: 0;
+        }
+
+        p {
+          font-family: AvenirMedium;
+          font-size: 14px;
+          color: #747474;
+          letter-spacing: 0;
+          text-align: center;
+          margin: 0;
+          margin-top: 5px;
+          margin-bottom: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        a {
+          background: #F6BA5F;
+          width: 100%;
+          padding-top: 9px;
+          padding-bottom: 9px;
+          font-family: AvenirHeavy;
+          font-size: 16px;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          text-align: center;
+          display: block;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+
+          &:hover {
+            background: #D87745;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-slide {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.slick-list {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.reference {
+  background: url("../img/pozadi3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
