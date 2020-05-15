@@ -1,0 +1,115 @@
+.kontaktBody {
+  background: #FBFBFB;
+}
+
+.jumbotronKontakt {
+  .jumboTop {
+    text-align: center;
+    background-image: url("../img/pozadi2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -11;
+    padding-top: 60px;
+    height: 440px;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      content: " ";
+      background-color: black;
+      opacity: 60%;
+      position: absolute;
+      z-index: -10;
+      top: 0;
+      left: 0;
+    }
+
+    h1 {
+      font-family: AvenirBlack;
+      font-size: 36px;
+      color: #FFFFFF;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+
+  .jumboBot {
+    margin: 0 auto;
+    margin-top: -160px;
+    background: #fff;
+    width: calc(100% - 30px);
+    max-width: 330px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.14);
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 0;
+
+    img {
+      position: absolute;
+      width: 84px;
+      right: 30px;
+      top: calc(50% - 94px/2);
+    }
+
+    div {
+      display: inline-block;
+      margin-left: 30px;
+
+      p {
+        font-family: AvenirMedium;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 25px;
+
+        span {
+          font-family: AvenirHeavy;
+        }
+      }
+    }
+  }
+}
+
+.contentKontakt {
+  text-align: center;
+
+  p {
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 27px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .mapa {
+    h2 {
+      font-family: AvenirMedium;
+      font-size: 23px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 34px;
+    }
+
+    div {
+      width: 100%;
+      height: 300px;
+      background: gray;
+    }
+  }
+}

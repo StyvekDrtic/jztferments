@@ -1,0 +1,102 @@
+.jumbotronFaqs {
+  background: #EBEBEB;
+  padding-top: 60px;
+  padding-bottom: 5px;
+
+  .nadpis {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+
+    h1 {
+      font-family: AvenirBlack;
+      font-size: 36px;
+      color: #000000;
+      text-align: center;
+      z-index: 10;
+      position: relative;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .prouzek {
+      width: calc(100% + 20px);
+      height: 20px;
+      opacity: 0.5;
+      background: #FFFFFF;
+      position: absolute;
+      top: 25px;
+      left: -10px;
+    }
+  }
+}
+
+.faqs {
+  ul {
+    padding: 0;
+    margin: 0 auto;
+
+    li {
+      margin: 0 auto;
+      list-style: none;
+      margin-top: 35px;
+      margin-bottom: 35px;
+
+      .otazka {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 23px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+          height: 23px;
+          background: url("../img/minus.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+        }
+
+        h2 {
+          font-family: AvenirMedium;
+          font-size: 20px;
+          color: #000000;
+          letter-spacing: 0;
+          line-height: 34px;
+          cursor: pointer;
+        }
+
+        p {
+          font-family: AvenirMedium;
+          font-size: 16px;
+          color: #838383;
+          letter-spacing: 0;
+          line-height: 27px;
+        }
+      }
+
+      .zavreno {
+        &::before {
+          content: "";
+          width: 23px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+          height: 23px;
+          background: url("../img/plus.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}

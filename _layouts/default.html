@@ -3,7 +3,7 @@
   {% include art.html %}
   {% include head.html %}
 
-  <body {% if page.url == "/" %}class="homepage"{% endif %}>
+  <body {% if page.url == "/" %}class="homepage"{% endif %} {% if page.kontakt == 1 %}class="kontaktBody"{% endif %}>
 
     {% include header.html %}
 

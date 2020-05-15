@@ -1,0 +1,56 @@
+.jumbotronText {
+  background: #F5EBDC;
+  padding-top: 60px;
+
+  .popisek {
+    font-family: AvenirHeavy;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 45px;
+  }
+
+  .nadpis {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+
+    h1 {
+      font-family: AvenirBlack;
+      font-size: 36px;
+      color: #000000;
+      text-align: center;
+      z-index: 10;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    .prouzek {
+      width: calc(100% + 20px);
+      height: 20px;
+      opacity: 0.5;
+      background: #FFFFFF;
+      position: absolute;
+      top: 25px;
+      left: -10px;
+    }
+  }
+}
+
+.prostorProText {
+  p {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-top: 40px;
+  }
+}

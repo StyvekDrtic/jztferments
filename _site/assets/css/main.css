@@ -2983,3 +2983,212 @@ footer {
     color: #fff;
     padding-left: 40px;
     padding-right: 40px; }
+
+.kontaktBody {
+  background: #FBFBFB; }
+
+.jumbotronKontakt .jumboTop {
+  text-align: center;
+  background-image: url("../img/pozadi2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -11;
+  padding-top: 60px;
+  height: 440px; }
+  .jumbotronKontakt .jumboTop::before {
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0; }
+  .jumbotronKontakt .jumboTop h1 {
+    font-family: AvenirBlack;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  .jumbotronKontakt .jumboTop a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 15px; }
+.jumbotronKontakt .jumboBot {
+  margin: 0 auto;
+  margin-top: -160px;
+  background: #fff;
+  width: calc(100% - 30px);
+  max-width: 330px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+  position: relative;
+  padding: 10px 0; }
+  .jumbotronKontakt .jumboBot img {
+    position: absolute;
+    width: 84px;
+    right: 30px;
+    top: calc(50% - 94px/2); }
+  .jumbotronKontakt .jumboBot div {
+    display: inline-block;
+    margin-left: 30px; }
+    .jumbotronKontakt .jumboBot div p {
+      font-family: AvenirMedium;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 25px; }
+      .jumbotronKontakt .jumboBot div p span {
+        font-family: AvenirHeavy; }
+
+.contentKontakt {
+  text-align: center; }
+  .contentKontakt p {
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 27px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .contentKontakt .mapa h2 {
+    font-family: AvenirMedium;
+    font-size: 23px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 34px; }
+  .contentKontakt .mapa div {
+    width: 100%;
+    height: 300px;
+    background: gray; }
+
+.jumbotronText {
+  background: #F5EBDC;
+  padding-top: 60px; }
+  .jumbotronText .popisek {
+    font-family: AvenirHeavy;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 45px; }
+  .jumbotronText .nadpis {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto; }
+    .jumbotronText .nadpis h1 {
+      font-family: AvenirBlack;
+      font-size: 36px;
+      color: #000000;
+      text-align: center;
+      z-index: 10;
+      position: relative;
+      margin-top: 40px; }
+    .jumbotronText .nadpis .prouzek {
+      width: calc(100% + 20px);
+      height: 20px;
+      opacity: 0.5;
+      background: #FFFFFF;
+      position: absolute;
+      top: 25px;
+      left: -10px; }
+
+.prostorProText p {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  font-family: AvenirMedium;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-top: 40px; }
+
+.jumbotronFaqs {
+  background: #EBEBEB;
+  padding-top: 60px;
+  padding-bottom: 5px; }
+  .jumbotronFaqs .nadpis {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto; }
+    .jumbotronFaqs .nadpis h1 {
+      font-family: AvenirBlack;
+      font-size: 36px;
+      color: #000000;
+      text-align: center;
+      z-index: 10;
+      position: relative;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+    .jumbotronFaqs .nadpis .prouzek {
+      width: calc(100% + 20px);
+      height: 20px;
+      opacity: 0.5;
+      background: #FFFFFF;
+      position: absolute;
+      top: 25px;
+      left: -10px; }
+
+.faqs ul {
+  padding: 0;
+  margin: 0 auto; }
+  .faqs ul li {
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 35px;
+    margin-bottom: 35px; }
+    .faqs ul li .otazka {
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      position: relative; }
+      .faqs ul li .otazka::before {
+        content: "";
+        width: 23px;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        height: 23px;
+        background: url("../img/minus.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer; }
+      .faqs ul li .otazka h2 {
+        font-family: AvenirMedium;
+        font-size: 20px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 34px;
+        cursor: pointer; }
+      .faqs ul li .otazka p {
+        font-family: AvenirMedium;
+        font-size: 16px;
+        color: #838383;
+        letter-spacing: 0;
+        line-height: 27px; }
+    .faqs ul li .zavreno::before {
+      content: "";
+      width: 23px;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      height: 23px;
+      background: url("../img/plus.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .faqs ul li .zavreno p {
+      display: none; }

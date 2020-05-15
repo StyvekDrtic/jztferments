@@ -60,3 +60,15 @@ $('.produktyInner').slick({
   initialSlide: 2,
   centerPadding: '70px',
 });
+
+// faqs
+
+$(".otazka").click(function() {
+  if ($(this).hasClass("zavreno")) {
+    $(this).removeClass("zavreno");
+  }
+
+  else {
+    $(this).addClass("zavreno");
+  }
+});
