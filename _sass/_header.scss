@@ -27,3 +27,56 @@ header {
     position: absolute;
   }
 }
+
+.mobilniMenu {
+  z-index: 10000;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+
+  .mobileHeader {
+    .menuButton {
+      width: 25px;
+      top: 19px;
+      left: 20px;
+      position: absolute;
+    }
+
+    .logo {
+      width: 36px;
+      top: 10px;
+      left: calc(50% - 36px/2);
+      position: absolute;
+    }
+
+    .zavrit {
+      width: 26px;
+      top: 17px;
+      right: 20px;
+      position: absolute;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 85px;
+
+    li {
+      list-style: none;
+      margin: 30px;
+
+      a {
+        font-family: AvenirMedium;
+      }
+    }
+  }
+}
+
+.mobilniMenuZavrit {
+  display: none;
+}

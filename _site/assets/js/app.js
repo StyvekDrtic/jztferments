@@ -72,3 +72,49 @@ $(".otazka").click(function() {
     $(this).addClass("zavreno");
   }
 });
+
+// menu
+
+$(".menuButton").click(function() {
+  if ($(".mobilniMenu").hasClass("mobilniMenuZavrit")) {
+    $(".mobilniMenu").removeClass("mobilniMenuZavrit");
+    $(".mobilniMenu").addClass("animated");
+    $(".mobilniMenu").addClass("fadeInDown");
+  }
+
+  else {
+    $(".mobilniMenu").removeClass("animated");
+    $(".mobilniMenu").removeClass("fadeInDown");
+
+    $(".mobilniMenu").addClass("animated");
+    $(".mobilniMenu").addClass("fadeOutUp");
+
+    setTimeout(function(){
+      $(".mobilniMenu").addClass("mobilniMenuZavrit");
+      $(".mobilniMenu").removeClass("animated");
+      $(".mobilniMenu").removeClass("fadeOutUp");
+    }, 1000);
+  }
+});
+
+$(".zavrit").click(function() {
+  if ($(".mobilniMenu").hasClass("mobilniMenuZavrit")) {
+    $(".mobilniMenu").removeClass("mobilniMenuZavrit");
+    $(".mobilniMenu").addClass("animated");
+    $(".mobilniMenu").addClass("fadeInDown");
+  }
+
+  else {
+    $(".mobilniMenu").removeClass("animated");
+    $(".mobilniMenu").removeClass("fadeInDown");
+
+    $(".mobilniMenu").addClass("animated");
+    $(".mobilniMenu").addClass("fadeOutUp");
+
+    setTimeout(function(){
+      $(".mobilniMenu").addClass("mobilniMenuZavrit");
+      $(".mobilniMenu").removeClass("animated");
+      $(".mobilniMenu").removeClass("fadeOutUp");
+    }, 1000);
+  }
+});
