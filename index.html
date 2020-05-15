@@ -75,7 +75,7 @@ layout: default
 
 
 <section class="reference">
-  <img src="assets/img/hvezdy.png" alt="Hvězdičky">
+  <img src="assets/img/hvezdy.png" class="hvezdicky" alt="Hvězdičky">
   <h2>Naši spokojení zákazníci</h2>
   <div class="citaty">
     <div class="citat">
@@ -94,11 +94,16 @@ layout: default
     </div>
   </div>
   <a class="button buttonReference" href="#">Vyzkoušejte je!</a>
+  <img src="assets/img/pozadi3.svg" class="pozadi" alt="Pozadí">
 </section>
 
 <section class="delameToPoctive">
-  <h2>Děláme to poctivě</h2>
-  <p>Nullam rhoncus aliquam metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum fermentum tortor id mi. Aenean id metus id velit ullamcorper pulvinar. Duis viverra diam non justo. Phasellus et lorem id felis.</p>
-  <a href=/onas>Zjistit více</a>
+  <div class="delameToPoctiveInner">
+    <h2>Děláme to poctivě</h2>
+    <p>Nullam rhoncus aliquam metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum fermentum tortor id mi. Aenean id metus id velit ullamcorper pulvinar. Duis viverra diam non justo. Phasellus et lorem id felis.</p>
+    <a href=/onas>Zjistit více</a>
+  </div>
   <img src="assets/img/zakladatele.png" alt="Zakladatelé">
 </section>
+
+{% include kupon.html %}
