@@ -1,6 +1,8 @@
 .jumbotronText {
   background: #F5EBDC;
   padding-top: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
 
   .popisek {
     font-family: AvenirHeavy;
@@ -12,6 +14,11 @@
     margin: 0 auto;
     margin-top: 20px;
     padding-bottom: 45px;
+
+    @media (min-width: 900px) {
+      width: 420px;
+      padding-bottom: 80px;
+    }
   }
 
   .nadpis {
@@ -28,6 +35,12 @@
       z-index: 10;
       position: relative;
       margin-top: 40px;
+
+      @media (min-width: 900px) {
+        font-size: 57px;
+        padding-top: 75px;
+        margin-top: 0;
+      }
     }
 
     .prouzek {
@@ -38,7 +51,23 @@
       position: absolute;
       top: 25px;
       left: -10px;
+
+      @media (min-width: 900px) {
+        height: 39px;
+        width: calc(100% + 30px);
+        left: -15px;
+        bottom: 0;
+        top: auto;
+        opacity: 0.8;
+      }
     }
+  }
+
+  @media (min-width: 900px) {
+    margin-top: 80px;
+    padding: 0;
+    border-radius: 5px;
+    width: calc(100% - 50px);
   }
 }
 
@@ -52,5 +81,10 @@
     letter-spacing: 0;
     line-height: 27px;
     margin-top: 40px;
+  }
+
+  @media (min-width: 900px) {
+    max-width: 950px;
+    margin: 0 auto;
   }
 }

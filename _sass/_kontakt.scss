@@ -1,5 +1,9 @@
 .kontaktBody {
   background: #FBFBFB;
+
+  @media (min-width: 900px) {
+    background: #fff;
+  }
 }
 
 .jumbotronKontakt {
@@ -12,6 +16,8 @@
     z-index: -11;
     padding-top: 60px;
     height: 440px;
+    max-width: 1000px;
+    margin: 0 auto;
 
     &::before {
       width: 100%;
@@ -23,6 +29,10 @@
       z-index: -10;
       top: 0;
       left: 0;
+
+      @media (min-width: 900px) {
+        border-radius: 5px;
+      }
     }
 
     h1 {
@@ -33,6 +43,12 @@
       margin: 0 auto;
       margin-top: 40px;
       margin-bottom: 30px;
+
+      @media (min-width: 900px) {
+        font-size: 57px;
+        padding-top: 55px;
+        margin-top: 0;
+      }
     }
 
     a {
@@ -40,6 +56,16 @@
       width: fit-content;
       margin: 0 auto;
       margin-bottom: 15px;
+    }
+
+    @media (min-width: 900px) {
+      margin-top: 80px;
+      padding: 0;
+      border-radius: 5px;
+      width: calc(100% - 50px);
+      height: auto;
+      padding-bottom: 60px;
+      background-position: 50% 43%;
     }
   }
 
@@ -77,13 +103,17 @@
         }
       }
     }
+
+    @media (min-width: 900px) {
+      display: none;
+    }
   }
 }
 
 .contentKontakt {
   text-align: center;
 
-  p {
+  .popisekKontakt {
     font-family: AvenirMedium;
     font-size: 16px;
     color: #000000;
@@ -94,6 +124,12 @@
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    @media (min-width: 900px) {
+      text-align: left;
+      margin: 0;
+      margin-top: 30px;
+    }
   }
 
   .mapa {
@@ -104,12 +140,80 @@
       letter-spacing: 0;
       text-align: center;
       line-height: 34px;
+
+      @media (min-width: 900px) {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 40px;
+      }
     }
 
     div {
       width: 100%;
       height: 300px;
       background: gray;
+
+      @media (min-width: 900px) {
+        border-radius: 5px;
+        max-width: 950px;
+        margin: 0 auto;
+        width: calc(100% - 50px);
+      }
     }
+  }
+}
+
+.desktopVizitka {
+  display: none;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  width: calc(100% - 30px);
+  max-width: 330px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 10px 0;
+  float: right;
+  margin-left: 70px;
+
+  img {
+    position: absolute;
+    width: 84px;
+    right: 30px;
+    top: calc(50% - 94px/2);
+  }
+
+  div {
+    display: inline-block;
+    margin-left: 30px;
+    text-align: left;
+
+    p {
+      font-family: AvenirMedium;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 25px;
+      text-align: left;
+
+      span {
+        font-family: AvenirHeavy;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    display: block;
+    margin-top: -15px;
+  }
+}
+
+.desktopVizitkaOuter {
+  @media (min-width: 900px) {
+    max-width: 730px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
 }

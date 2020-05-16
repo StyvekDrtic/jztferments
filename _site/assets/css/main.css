@@ -5105,7 +5105,7 @@ header {
     position: absolute; }
   header .desktopHeader {
     display: none;
-    width: calc(100% - 40px);
+    width: calc(100% - 50px);
     margin: 0 auto;
     position: relative;
     max-width: 1000px; }
@@ -5635,6 +5635,9 @@ footer {
 
 .kontaktBody {
   background: #FBFBFB; }
+  @media (min-width: 900px) {
+    .kontaktBody {
+      background: #fff; } }
 
 .jumbotronKontakt .jumboTop {
   text-align: center;
@@ -5644,7 +5647,9 @@ footer {
   position: relative;
   z-index: -11;
   padding-top: 60px;
-  height: 440px; }
+  height: 440px;
+  max-width: 1000px;
+  margin: 0 auto; }
   .jumbotronKontakt .jumboTop::before {
     width: 100%;
     height: 100%;
@@ -5655,6 +5660,9 @@ footer {
     z-index: -10;
     top: 0;
     left: 0; }
+    @media (min-width: 900px) {
+      .jumbotronKontakt .jumboTop::before {
+        border-radius: 5px; } }
   .jumbotronKontakt .jumboTop h1 {
     font-family: AvenirBlack;
     font-size: 36px;
@@ -5663,11 +5671,25 @@ footer {
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 30px; }
+    @media (min-width: 900px) {
+      .jumbotronKontakt .jumboTop h1 {
+        font-size: 57px;
+        padding-top: 55px;
+        margin-top: 0; } }
   .jumbotronKontakt .jumboTop a {
     display: block;
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 15px; }
+  @media (min-width: 900px) {
+    .jumbotronKontakt .jumboTop {
+      margin-top: 80px;
+      padding: 0;
+      border-radius: 5px;
+      width: calc(100% - 50px);
+      height: auto;
+      padding-bottom: 60px;
+      background-position: 50% 43%; } }
 .jumbotronKontakt .jumboBot {
   margin: 0 auto;
   margin-top: -160px;
@@ -5694,10 +5716,13 @@ footer {
       line-height: 25px; }
       .jumbotronKontakt .jumboBot div p span {
         font-family: AvenirHeavy; }
+  @media (min-width: 900px) {
+    .jumbotronKontakt .jumboBot {
+      display: none; } }
 
 .contentKontakt {
   text-align: center; }
-  .contentKontakt p {
+  .contentKontakt .popisekKontakt {
     font-family: AvenirMedium;
     font-size: 16px;
     color: #000000;
@@ -5708,6 +5733,11 @@ footer {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px; }
+    @media (min-width: 900px) {
+      .contentKontakt .popisekKontakt {
+        text-align: left;
+        margin: 0;
+        margin-top: 30px; } }
   .contentKontakt .mapa h2 {
     font-family: AvenirMedium;
     font-size: 23px;
@@ -5715,14 +5745,70 @@ footer {
     letter-spacing: 0;
     text-align: center;
     line-height: 34px; }
+    @media (min-width: 900px) {
+      .contentKontakt .mapa h2 {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 40px; } }
   .contentKontakt .mapa div {
     width: 100%;
     height: 300px;
     background: gray; }
+    @media (min-width: 900px) {
+      .contentKontakt .mapa div {
+        border-radius: 5px;
+        max-width: 950px;
+        margin: 0 auto;
+        width: calc(100% - 50px); } }
+
+.desktopVizitka {
+  display: none;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  width: calc(100% - 30px);
+  max-width: 330px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+  padding: 10px 0;
+  float: right;
+  margin-left: 70px; }
+  .desktopVizitka img {
+    position: absolute;
+    width: 84px;
+    right: 30px;
+    top: calc(50% - 94px/2); }
+  .desktopVizitka div {
+    display: inline-block;
+    margin-left: 30px;
+    text-align: left; }
+    .desktopVizitka div p {
+      font-family: AvenirMedium;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 25px;
+      text-align: left; }
+      .desktopVizitka div p span {
+        font-family: AvenirHeavy; }
+  @media (min-width: 900px) {
+    .desktopVizitka {
+      display: block;
+      margin-top: -15px; } }
+
+@media (min-width: 900px) {
+  .desktopVizitkaOuter {
+    max-width: 730px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 90px; } }
 
 .jumbotronText {
   background: #F5EBDC;
-  padding-top: 60px; }
+  padding-top: 60px;
+  max-width: 1000px;
+  margin: 0 auto; }
   .jumbotronText .popisek {
     font-family: AvenirHeavy;
     font-size: 16px;
@@ -5733,6 +5819,10 @@ footer {
     margin: 0 auto;
     margin-top: 20px;
     padding-bottom: 45px; }
+    @media (min-width: 900px) {
+      .jumbotronText .popisek {
+        width: 420px;
+        padding-bottom: 80px; } }
   .jumbotronText .nadpis {
     position: relative;
     width: fit-content;
@@ -5746,6 +5836,11 @@ footer {
       z-index: 10;
       position: relative;
       margin-top: 40px; }
+      @media (min-width: 900px) {
+        .jumbotronText .nadpis h1 {
+          font-size: 57px;
+          padding-top: 75px;
+          margin-top: 0; } }
     .jumbotronText .nadpis .prouzek {
       width: calc(100% + 20px);
       height: 20px;
@@ -5754,6 +5849,20 @@ footer {
       position: absolute;
       top: 25px;
       left: -10px; }
+      @media (min-width: 900px) {
+        .jumbotronText .nadpis .prouzek {
+          height: 39px;
+          width: calc(100% + 30px);
+          left: -15px;
+          bottom: 0;
+          top: auto;
+          opacity: 0.8; } }
+  @media (min-width: 900px) {
+    .jumbotronText {
+      margin-top: 80px;
+      padding: 0;
+      border-radius: 5px;
+      width: calc(100% - 50px); } }
 
 .prostorProText p {
   width: calc(100% - 30px);
@@ -5764,11 +5873,17 @@ footer {
   letter-spacing: 0;
   line-height: 27px;
   margin-top: 40px; }
+@media (min-width: 900px) {
+  .prostorProText {
+    max-width: 950px;
+    margin: 0 auto; } }
 
 .jumbotronFaqs {
   background: #EBEBEB;
   padding-top: 60px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  margin: 0 auto;
+  max-width: 1000px; }
   .jumbotronFaqs .nadpis {
     position: relative;
     width: fit-content;
@@ -5783,6 +5898,11 @@ footer {
       position: relative;
       margin-top: 25px;
       margin-bottom: 25px; }
+      @media (min-width: 900px) {
+        .jumbotronFaqs .nadpis h1 {
+          font-size: 57px;
+          padding-top: 45px;
+          margin-top: 0; } }
     .jumbotronFaqs .nadpis .prouzek {
       width: calc(100% + 20px);
       height: 20px;
@@ -5791,10 +5911,26 @@ footer {
       position: absolute;
       top: 25px;
       left: -10px; }
+      @media (min-width: 900px) {
+        .jumbotronFaqs .nadpis .prouzek {
+          height: 39px;
+          width: calc(100% + 30px);
+          left: -15px;
+          bottom: 0;
+          top: auto;
+          opacity: 0.8; } }
+  @media (min-width: 900px) {
+    .jumbotronFaqs {
+      margin-top: 80px;
+      padding: 0;
+      border-radius: 5px;
+      width: calc(100% - 50px);
+      padding-bottom: 30px; } }
 
 .faqs ul {
   padding: 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 650px; }
   .faqs ul li {
     margin: 0 auto;
     list-style: none;
@@ -5841,3 +5977,6 @@ footer {
       background-repeat: no-repeat; }
     .faqs ul li .zavreno p {
       display: none; }
+    @media (min-width: 900px) {
+      .faqs ul li {
+        margin: 60px auto; } }
