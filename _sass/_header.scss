@@ -6,6 +6,12 @@ header {
   top: 0;
   z-index: 100;
 
+  .mobileHeader {
+    @media (min-width: 900px) {
+      display: none;
+    }
+  }
+
   .menuButton {
     width: 25px;
     top: 19px;
@@ -13,11 +19,54 @@ header {
     position: absolute;
   }
 
+  .desktopHeader {
+    display: none;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    position: relative;
+    max-width: 1000px;
+
+    .desktopNav {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 30px;
+      left: 0;
+
+      li {
+        list-style: none;
+        margin: 0;
+        display: inline-block;
+        margin-right: 45px;
+
+        a {
+          font-family: AvenirHeavy;
+          font-size: 15px;
+          color: #808080;
+
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 900px) {
+      display: block;
+    }
+  }
+
   .logo {
     width: 36px;
     top: 10px;
     left: calc(50% - 36px/2);
     position: absolute;
+
+    @media (min-width: 900px) {
+      width: 40px;
+      top: 18px;
+      left: calc(50% - 44px/2);
+    }
   }
 
   .instagramButton {
@@ -25,6 +74,16 @@ header {
     top: 17px;
     right: 20px;
     position: absolute;
+
+    @media (min-width: 900px) {
+      width: 30px;
+      top: 25px;
+      right: 0;
+    }
+  }
+
+  @media (min-width: 900px) {
+    height: 80px;
   }
 }
 

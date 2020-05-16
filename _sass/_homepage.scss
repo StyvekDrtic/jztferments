@@ -1,5 +1,9 @@
 .homepage {
   background: #FBFBFB;
+
+  @media (min-width: 900px) {
+    background: #fff;
+  }
 }
 
 .jumbotron {
@@ -10,19 +14,62 @@
     background: url("../img/pozadi1.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
     height: 440px;
     text-align: center;
     background-size: 120%;
 
+    .prouzek {
+      height: 39px;
+      position: absolute;
+      bottom: 0px;
+      left: -15px;
+      width: calc(100% + 30px);
+      opacity: 0.8;
+      background: #FFFFFF;
+      display: none;
+      z-index: 0;
+
+      @media (min-width: 900px) {
+        display: block;
+      }
+    }
+
+    .nadpisOuter {
+      @media (min-width: 900px) {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+
     h1 {
-      margin: 0;
+      margin: 0 auto;
       font-family: AvenirBlack;
       font-size: 36px;
       color: #000000;
       text-align: center;
       padding-top: 50px;
       margin-bottom: 40px;
+      max-width: 400px;
+      width: 100%;
+      z-index: 1;
+      position: relative;
+
+      @media (min-width: 900px) {
+        font-size: 57px;
+        max-width: none;
+        margin-bottom: 55px;
+        padding-top: 110px;
+      }
+    }
+
+    @media (min-width: 900px) {
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 5px;
+      background-position: 50% 25%;
+      background-size: cover;
+      height: 460px;
     }
   }
 
@@ -35,6 +82,7 @@
     position: relative;
     margin-top: -180px;
     padding: 30px 0;
+    max-width: 480px;
 
     ul {
       padding: 0;
@@ -47,6 +95,12 @@
         position: relative;
         margin-bottom: 30px;
         width: fit-content;
+
+        &:nth-child(2) {
+          @media (min-width: 900px) {
+            margin: 0 25px;
+          }
+        }
 
         &:last-child {
           margin-bottom: 0;
@@ -84,8 +138,28 @@
             margin: 0;
           }
         }
+
+        @media (min-width: 900px) {
+          margin: 0;
+        }
+      }
+
+      @media (min-width: 900px) {
+        display: flex;
+        align-items: center;
       }
     }
+
+    @media (min-width: 900px) {
+      max-width: 950px;
+      width: calc(100% - 50px);
+      padding: 25px 0;
+      margin-top: -70px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    padding-top: 80px;
   }
 }
 
@@ -102,6 +176,30 @@
     line-height: 34px;
     margin-top: 70px;
     margin-bottom: 70px;
+
+    @media (min-width: 900px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .mobileProduktyInner {
+    @media (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  .desktopProduktyInner {
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    @media (min-width: 900px) {
+      display: flex;
+    }
   }
 
   .produktyInner {
@@ -213,6 +311,10 @@
       &:first-child {
         margin-bottom: 30px;
         margin-top: 50px;
+
+        @media (min-width: 900px) {
+          margin-top: 40px;
+        }
       }
 
       img {
@@ -255,6 +357,14 @@
         }
       }
     }
+
+    @media (min-width: 900px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
   }
 
   .pozadi {
@@ -274,6 +384,18 @@
   .delameToPoctiveInner {
     width: calc(100% - 30px);
     margin: 0 auto;
+
+    @media (min-width: 900px) {
+      display: inline-block;
+      width: 380px;
+      vertical-align: middle;
+      margin: 0;
+      text-align: left;
+    }
+
+    @media (min-width: 1100px) {
+      width: 475px;
+    }
   }
 
   h2 {
@@ -285,6 +407,10 @@
     line-height: 34px;
     margin: 0;
     margin-bottom: 25px;
+
+    @media (min-width: 900px) {
+      text-align: left;
+    }
   }
 
   p {
@@ -296,6 +422,11 @@
     line-height: 27px;
     margin: 0 auto;
     margin-bottom: 25px;
+    max-width: 500px;
+
+    @media (min-width: 900px) {
+      text-align: left;
+    }
   }
 
   a {
@@ -307,11 +438,39 @@
     line-height: 27px;
     text-decoration: underline;
     margin: 0;
+
+    @media (min-width: 900px) {
+      text-align: left;
+    }
   }
 
   img {
     width: 100%;
     margin-top: 50px;
+    max-width: 500px;
+
+    @media (min-width: 900px) {
+      display: inline-block;
+      width: 400px;
+      vertical-align: middle;
+      margin: 0;
+      margin-left: calc(100% - 390px - 400px);
+    }
+
+    @media (min-width: 1100px) {
+      margin-left: calc(100% - 480px - 400px);
+    }
+  }
+
+  @media (min-width: 900px) {
+    max-width: 900px;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  @media (min-width: 1100px) {
+    max-width: 950px;
   }
 }
 
@@ -359,5 +518,10 @@
     color: #fff;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @media (min-width: 900px) {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }

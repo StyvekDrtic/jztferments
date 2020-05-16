@@ -49,7 +49,7 @@ $('a[href*="#"]')
 
 // slick
 
-$('.produktyInner').slick({
+$('.mobileProduktyInner').slick({
   infinite: false,
   variableWidth: true,
   dots: false,
@@ -57,9 +57,10 @@ $('.produktyInner').slick({
   autoplaySpeed: 3000,
   centerMode: true,
   arrows: false,
-  initialSlide: 2,
+  initialSlide: 1,
   centerPadding: '70px',
 });
+
 
 // faqs
 
