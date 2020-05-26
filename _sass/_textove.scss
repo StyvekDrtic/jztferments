@@ -3,6 +3,7 @@
   padding-top: 60px;
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: 25px;
 
   .popisek {
     font-family: AvenirHeavy;
@@ -68,19 +69,35 @@
     padding: 0;
     border-radius: 5px;
     width: calc(100% - 50px);
+    padding-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 
 .prostorProText {
+  h2 {
+    font-family: AvenirMedium;
+    font-size: 28px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
   p {
     width: calc(100% - 30px);
     margin: 0 auto;
-    font-family: AvenirMedium;
+    font-family: AvenirRoman;
     font-size: 16px;
     color: #000000;
     letter-spacing: 0;
     line-height: 27px;
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+
+  a {
+    text-decoration: underline;
+    font-family: AvenirHeavy;
   }
 
   @media (min-width: 900px) {

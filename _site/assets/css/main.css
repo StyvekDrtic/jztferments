@@ -5266,7 +5266,7 @@ footer {
     .jumbotron .jumboTop h1 {
       margin: 0 auto;
       font-family: AvenirBlack;
-      font-size: 36px;
+      font-size: 34px;
       color: #000000;
       text-align: center;
       padding-top: 50px;
@@ -5275,9 +5275,12 @@ footer {
       width: 100%;
       z-index: 1;
       position: relative; }
+      @media (max-width: 350px) {
+        .jumbotron .jumboTop h1 {
+          font-size: 32px; } }
       @media (min-width: 900px) {
         .jumbotron .jumboTop h1 {
-          font-size: 57px;
+          font-size: 50px;
           max-width: none;
           margin-bottom: 55px;
           padding-top: 110px; } }
@@ -5308,7 +5311,8 @@ footer {
         margin: 0 auto;
         position: relative;
         margin-bottom: 30px;
-        width: fit-content; }
+        width: fit-content;
+        width: 100%; }
         @media (min-width: 900px) {
           .jumbotron .jumboBot ul li:nth-child(2) {
             margin: 0 25px; } }
@@ -5415,7 +5419,7 @@ footer {
       margin-left: 10px;
       margin-right: 10px; }
     .produkty .produktyInner .piti .pitiInner a {
-      background: #F6BA5F;
+      background: #F7CD8D;
       width: 100%;
       padding-top: 9px;
       padding-bottom: 9px;
@@ -5461,7 +5465,7 @@ footer {
     text-align: left; }
     .reference .citaty .citat {
       width: calc(100% - 40px);
-      max-width: 310px;
+      max-width: 360px;
       margin: 0 auto; }
       .reference .citaty .citat:first-child {
         margin-bottom: 30px;
@@ -5474,7 +5478,9 @@ footer {
         margin: 0 auto;
         display: block;
         z-index: 10;
-        position: relative; }
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1); }
       .reference .citaty .citat .citatText {
         background: #FFFFFF;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
@@ -5546,14 +5552,15 @@ footer {
         text-align: left; } }
   .delameToPoctive p {
     font-family: AvenirMedium;
-    font-size: 16px;
+    font-size: 14px;
     color: #8D8D8D;
     letter-spacing: 0;
     text-align: center;
     line-height: 27px;
     margin: 0 auto;
     margin-bottom: 25px;
-    max-width: 500px; }
+    max-width: 500px;
+    line-height: 24px; }
     @media (min-width: 900px) {
       .delameToPoctive p {
         text-align: left; } }
@@ -5702,9 +5709,14 @@ footer {
   padding: 10px 0; }
   .jumbotronKontakt .jumboBot img {
     position: absolute;
-    width: 84px;
+    width: 80px;
     right: 30px;
-    top: calc(50% - 94px/2); }
+    top: calc(50% - 90px/2); }
+    @media (max-width: 345px) {
+      .jumbotronKontakt .jumboBot img {
+        width: 60px;
+        right: 20px;
+        top: calc(50% - 67px/2); } }
   .jumbotronKontakt .jumboBot div {
     display: inline-block;
     margin-left: 30px; }
@@ -5716,6 +5728,9 @@ footer {
       line-height: 25px; }
       .jumbotronKontakt .jumboBot div p span {
         font-family: AvenirHeavy; }
+    @media (max-width: 345px) {
+      .jumbotronKontakt .jumboBot div {
+        margin-left: 20px; } }
   @media (min-width: 900px) {
     .jumbotronKontakt .jumboBot {
       display: none; } }
@@ -5732,12 +5747,17 @@ footer {
     width: calc(100% - 30px);
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    max-width: 370px; }
+    .contentKontakt .popisekKontakt span {
+      font-family: AvenirBlack;
+      display: block; }
     @media (min-width: 900px) {
       .contentKontakt .popisekKontakt {
         text-align: left;
         margin: 0;
-        margin-top: 30px; } }
+        margin-top: 30px;
+        max-width: none; } }
   .contentKontakt .mapa h2 {
     font-family: AvenirMedium;
     font-size: 23px;
@@ -5752,8 +5772,12 @@ footer {
         margin-bottom: 40px; } }
   .contentKontakt .mapa div {
     width: 100%;
-    height: 300px;
+    height: 500px;
     background: gray; }
+    .contentKontakt .mapa div iframe {
+      width: 100%;
+      height: 100%;
+      border: 0; }
     @media (min-width: 900px) {
       .contentKontakt .mapa div {
         border-radius: 5px;
@@ -5768,7 +5792,7 @@ footer {
   text-align: left;
   background: #fff;
   width: calc(100% - 30px);
-  max-width: 330px;
+  max-width: 340px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
   border-radius: 5px;
   padding: 10px 0;
@@ -5779,6 +5803,9 @@ footer {
     width: 84px;
     right: 30px;
     top: calc(50% - 94px/2); }
+    @media (max-width: 330px) {
+      .desktopVizitka img {
+        display: none; } }
   .desktopVizitka div {
     display: inline-block;
     margin-left: 30px;
@@ -5795,20 +5822,21 @@ footer {
   @media (min-width: 900px) {
     .desktopVizitka {
       display: block;
-      margin-top: -15px; } }
+      margin-top: -28px; } }
 
 @media (min-width: 900px) {
   .desktopVizitkaOuter {
     max-width: 730px;
     margin: 0 auto;
-    margin-top: 90px;
-    margin-bottom: 90px; } }
+    margin-top: 100px;
+    margin-bottom: 120px; } }
 
 .jumbotronText {
   background: #F5EBDC;
   padding-top: 60px;
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 25px; }
   .jumbotronText .popisek {
     font-family: AvenirHeavy;
     font-size: 16px;
@@ -5862,17 +5890,29 @@ footer {
       margin-top: 80px;
       padding: 0;
       border-radius: 5px;
-      width: calc(100% - 50px); } }
+      width: calc(100% - 50px);
+      padding-bottom: 50px;
+      margin-bottom: 40px; } }
 
+.prostorProText h2 {
+  font-family: AvenirMedium;
+  font-size: 28px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px; }
 .prostorProText p {
   width: calc(100% - 30px);
   margin: 0 auto;
-  font-family: AvenirMedium;
+  font-family: AvenirRoman;
   font-size: 16px;
   color: #000000;
   letter-spacing: 0;
   line-height: 27px;
-  margin-top: 40px; }
+  margin-top: 20px; }
+.prostorProText a {
+  text-decoration: underline;
+  font-family: AvenirHeavy; }
 @media (min-width: 900px) {
   .prostorProText {
     max-width: 950px;
@@ -5940,32 +5980,36 @@ footer {
       width: calc(100% - 40px);
       margin: 0 auto;
       position: relative; }
-      .faqs ul li .otazka::before {
-        content: "";
-        width: 23px;
-        position: absolute;
-        top: 5px;
-        right: 0;
-        height: 23px;
-        background: url("../img/minus.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer; }
       .faqs ul li .otazka h2 {
         font-family: AvenirMedium;
         font-size: 20px;
         color: #000000;
         letter-spacing: 0;
         line-height: 34px;
-        cursor: pointer; }
+        cursor: pointer;
+        margin-right: 40px; }
+        .faqs ul li .otazka h2::before {
+          content: "";
+          width: 23px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+          height: 23px;
+          background: url("../img/minus.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer; }
       .faqs ul li .otazka p {
         font-family: AvenirMedium;
         font-size: 14px;
         color: #838383;
         letter-spacing: 0;
         line-height: 23px; }
-    .faqs ul li .zavreno::before {
+        .faqs ul li .otazka p a {
+          text-decoration: underline;
+          font-family: AvenirHeavy; }
+    .faqs ul li .zavreno h2::before {
       content: "";
       width: 23px;
       position: absolute;

@@ -57,22 +57,26 @@ $('.mobileProduktyInner').slick({
   autoplaySpeed: 3000,
   centerMode: true,
   arrows: false,
-  initialSlide: 1,
+  initialSlide: 0,
   centerPadding: '70px',
 });
 
 
 // faqs
 
-$(".otazka").click(function() {
-  if ($(this).hasClass("zavreno")) {
-    $(this).removeClass("zavreno");
+$(".otazka h2").click(function() {
+  if ($(this).parent().hasClass("zavreno")) {
+
+
+    $(this).parent().removeClass("zavreno");
   }
 
   else {
-    $(this).addClass("zavreno");
+
+    $(this).parent().addClass("zavreno");
   }
 });
+
 
 // menu
 
@@ -118,4 +122,11 @@ $(".zavrit").click(function() {
       $(".mobilniMenu").removeClass("fadeOutUp");
     }, 1000);
   }
+});
+
+
+
+$('iframe').load( function() {
+    $('iframe').contents().find("head")
+      .append($("<style type='text/css'>  .i4ewOd-pzNkMb-haAclf {display: none;}  </style>"));
 });

@@ -82,9 +82,15 @@
 
     img {
       position: absolute;
-      width: 84px;
+      width: 80px;
       right: 30px;
-      top: calc(50% - 94px/2);
+      top: calc(50% - 90px/2);
+
+      @media (max-width: 345px) {
+        width: 60px;
+        right: 20px;
+        top: calc(50% - 67px/2);
+      }
     }
 
     div {
@@ -101,6 +107,10 @@
         span {
           font-family: AvenirHeavy;
         }
+      }
+
+      @media (max-width: 345px) {
+        margin-left: 20px;
       }
     }
 
@@ -124,11 +134,18 @@
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    max-width: 370px;
+
+    span {
+      font-family: AvenirBlack;
+      display: block;
+    }
 
     @media (min-width: 900px) {
       text-align: left;
       margin: 0;
       margin-top: 30px;
+      max-width: none;
     }
   }
 
@@ -150,8 +167,14 @@
 
     div {
       width: 100%;
-      height: 300px;
+      height: 500px;
       background: gray;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
 
       @media (min-width: 900px) {
         border-radius: 5px;
@@ -170,7 +193,7 @@
   text-align: left;
   background: #fff;
   width: calc(100% - 30px);
-  max-width: 330px;
+  max-width: 340px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.14);
   border-radius: 5px;
   padding: 10px 0;
@@ -182,6 +205,10 @@
     width: 84px;
     right: 30px;
     top: calc(50% - 94px/2);
+
+    @media (max-width: 330px) {
+      display: none;
+    }
   }
 
   div {
@@ -205,7 +232,7 @@
 
   @media (min-width: 900px) {
     display: block;
-    margin-top: -15px;
+    margin-top: -28px;
   }
 }
 
@@ -213,7 +240,7 @@
   @media (min-width: 900px) {
     max-width: 730px;
     margin: 0 auto;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-top: 100px;
+    margin-bottom: 120px;
   }
 }

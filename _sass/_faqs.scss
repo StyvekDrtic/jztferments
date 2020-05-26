@@ -74,20 +74,6 @@
         margin: 0 auto;
         position: relative;
 
-        &::before {
-          content: "";
-          width: 23px;
-          position: absolute;
-          top: 5px;
-          right: 0;
-          height: 23px;
-          background: url("../img/minus.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          cursor: pointer;
-        }
-
         h2 {
           font-family: AvenirMedium;
           font-size: 20px;
@@ -95,6 +81,21 @@
           letter-spacing: 0;
           line-height: 34px;
           cursor: pointer;
+          margin-right: 40px;
+
+          &::before {
+            content: "";
+            width: 23px;
+            position: absolute;
+            top: 5px;
+            right: 0;
+            height: 23px;
+            background: url("../img/minus.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+          }
         }
 
         p {
@@ -103,20 +104,27 @@
           color: #838383;
           letter-spacing: 0;
           line-height: 23px;
+
+          a {
+            text-decoration: underline;
+            font-family: AvenirHeavy;
+          }
         }
       }
 
       .zavreno {
-        &::before {
-          content: "";
-          width: 23px;
-          position: absolute;
-          top: 5px;
-          right: 0;
-          height: 23px;
-          background: url("../img/plus.png");
-          background-size: contain;
-          background-repeat: no-repeat;
+        h2 {
+          &::before {
+            content: "";
+            width: 23px;
+            position: absolute;
+            top: 5px;
+            right: 0;
+            height: 23px;
+            background: url("../img/plus.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
         }
 
         p {
