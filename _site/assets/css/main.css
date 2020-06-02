@@ -5114,7 +5114,7 @@ header {
       margin: 0;
       position: absolute;
       top: 30px;
-      left: 0; }
+      left: 90px; }
       header .desktopHeader .desktopNav li {
         list-style: none;
         margin: 0;
@@ -5138,7 +5138,7 @@ header {
       header .logo {
         width: 40px;
         top: 18px;
-        left: calc(50% - 44px/2); } }
+        left: 0; } }
   header .instagramButton {
     width: 26px;
     top: 17px;
@@ -5388,6 +5388,14 @@ footer {
     @media (min-width: 900px) {
       .produkty .desktopProduktyInner {
         display: flex; } }
+  .produkty .produktyInner .OG a {
+    background: #f1af60; }
+  .produkty .produktyInner .Bergamot a {
+    background: #e7bb83; }
+  .produkty .produktyInner .Jahoda a {
+    background: #f59764; }
+  .produkty .produktyInner .Marakuja a {
+    background: #e6a049; }
   .produkty .produktyInner .piti .pitiInner {
     background: #FFFFFF;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
@@ -5419,7 +5427,6 @@ footer {
       margin-left: 10px;
       margin-right: 10px; }
     .produkty .produktyInner .piti .pitiInner a {
-      background: #F7CD8D;
       width: 100%;
       padding-top: 9px;
       padding-bottom: 9px;
@@ -5737,6 +5744,24 @@ footer {
 
 .contentKontakt {
   text-align: center; }
+  .contentKontakt .seznam ul {
+    padding: 0;
+    max-width: 605px;
+    width: calc(100% - 40px);
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 40px; }
+    .contentKontakt .seznam ul li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 300px;
+      text-align: left;
+      font-family: AvenirBook;
+      margin-bottom: 30px;
+      display: inline-block; }
+      .contentKontakt .seznam ul li span {
+        font-family: AvenirBlack; }
   .contentKontakt .popisekKontakt {
     font-family: AvenirMedium;
     font-size: 16px;
@@ -5784,6 +5809,9 @@ footer {
         max-width: 950px;
         margin: 0 auto;
         width: calc(100% - 50px); } }
+  @media (min-width: 900px) {
+    .contentKontakt .mapa {
+      margin-top: 40px; } }
 
 .desktopVizitka {
   display: none;
@@ -5917,6 +5945,10 @@ footer {
   .prostorProText {
     max-width: 950px;
     margin: 0 auto; } }
+
+@media (min-width: 900px) {
+  .jumbotronFaqs2 {
+    background: #ecd4997a !important; } }
 
 .jumbotronFaqs {
   background: #EBEBEB;

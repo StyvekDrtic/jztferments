@@ -130,3 +130,15 @@ $('iframe').load( function() {
     $('iframe').contents().find("head")
       .append($("<style type='text/css'>  .i4ewOd-pzNkMb-haAclf {display: none;}  </style>"));
 });
+
+
+
+
+/*
+
+
+$('<li class="homepageOrigo"><a class="menu-item" href="https://demo.jztferments.cz/"><span class="menu-item-text">Homepage</span></a></li>').insertAfter('.level-1 li');
+$('<li class="onasOrigo"><a class="menu-item" href="https://demo.jztferments.cz/onas"><span class="menu-item-text">O nás</span></a></li>').insertAfter('.homepageOrigo');
+$('<li class="kontaktOrigo"><a class="menu-item" href="https://demo.jztferments.cz/kontakt"><span class="menu-item-text">Kontakt</span></a></li>').insertAfter('.onasOrigo');
+$('<li class="faqsOrigo"><a class="menu-item" href="https://demo.jztferments.cz/faqs"><span class="menu-item-text">FAQs</span></a></li>').insertAfter('.kontaktOrigo');
+*/

@@ -1,0 +1,35 @@
+/*
+@font-face {
+    font-family: "AvenirBlack";
+    src: url("https://demo.jztferments.cz/assets/fonts/Avenir-Black.ttf");
+}
+
+@font-face {
+    font-family: "AvenirMedium";
+    src: url("https://demo.jztferments.cz/assets/fonts/Avenir-Medium.ttf");
+}
+
+@font-face {
+    font-family: "AvenirBook";
+    src: url("https://demo.jztferments.cz/assets/fonts/Avenir-Book.ttf");
+}
+
+h4, h5, p, a, div, span {
+  font-weight: normal !important;
+  font-family: AvenirBook !important;
+  text-decoration: none;
+  color: black !important;
+}
+
+
+h1, h2, h3 {
+  font-weight: normal !important;
+  font-family: AvenirBlack !important;
+  text-decoration: none;
+  color: black !important;
+}
+
+h1 span {
+  font-family: AvenirBlack !important;
+}
+*/

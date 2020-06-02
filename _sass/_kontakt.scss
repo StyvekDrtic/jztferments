@@ -123,6 +123,32 @@
 .contentKontakt {
   text-align: center;
 
+  .seznam {
+    ul {
+      padding: 0;
+      max-width: 605px;
+      width: calc(100% - 40px);
+      text-align: left;
+      margin: 0 auto;
+      margin-top: 40px;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 300px;
+        text-align: left;
+        font-family: AvenirBook;
+        margin-bottom: 30px;
+        display: inline-block;
+
+        span {
+          font-family: AvenirBlack;
+        }
+      }
+    }
+  }
+
   .popisekKontakt {
     font-family: AvenirMedium;
     font-size: 16px;
@@ -150,6 +176,7 @@
   }
 
   .mapa {
+
     h2 {
       font-family: AvenirMedium;
       font-size: 23px;
@@ -182,6 +209,10 @@
         margin: 0 auto;
         width: calc(100% - 50px);
       }
+    }
+
+    @media (min-width: 900px) {
+      margin-top: 40px;
     }
   }
 }
