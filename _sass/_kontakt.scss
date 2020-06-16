@@ -13,7 +13,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    z-index: -11;
+    z-index: 0;
     padding-top: 60px;
     height: 440px;
     max-width: 1000px;
@@ -56,6 +56,8 @@
       width: fit-content;
       margin: 0 auto;
       margin-bottom: 15px;
+      position: relative;
+      z-index: 3000;
     }
 
     @media (min-width: 900px) {
@@ -142,6 +144,10 @@
         margin-bottom: 30px;
         display: inline-block;
 
+        a {
+          text-decoration: underline;
+        }
+
         span {
           font-family: AvenirBlack;
         }
@@ -161,6 +167,11 @@
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 370px;
+
+    a {
+      font-family: AvenirMedium;
+      text-decoration: underline;
+    }
 
     span {
       font-family: AvenirBlack;

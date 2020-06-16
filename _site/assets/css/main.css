@@ -5111,10 +5111,12 @@ header {
     max-width: 1000px; }
     header .desktopHeader .desktopNav {
       padding: 0;
-      margin: 0;
-      position: absolute;
-      top: 30px;
-      left: 90px; }
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      position: relative;
+      left: -50px;
+      top: 18px; }
       header .desktopHeader .desktopNav li {
         list-style: none;
         margin: 0;
@@ -5126,6 +5128,8 @@ header {
           color: #808080; }
           header .desktopHeader .desktopNav li a:hover {
             color: #000; }
+        header .desktopHeader .desktopNav li:last-child {
+          margin-right: 0; }
     @media (min-width: 900px) {
       header .desktopHeader {
         display: block; } }
@@ -5138,7 +5142,9 @@ header {
       header .logo {
         width: 40px;
         top: 18px;
-        left: 0; } }
+        left: 0;
+        position: static;
+        vertical-align: middle; } }
   header .instagramButton {
     width: 26px;
     top: 17px;
@@ -5148,10 +5154,16 @@ header {
       header .instagramButton {
         width: 30px;
         top: 25px;
-        right: 0; } }
+        right: 0;
+        position: static;
+        vertical-align: middle; } }
   @media (min-width: 900px) {
     header {
       height: 80px; } }
+
+@media (min-width: 900px) {
+  .instagramButtonMobile {
+    display: none; } }
 
 .mobilniMenu {
   z-index: 10000;
@@ -5619,12 +5631,12 @@ footer {
   .kupon .kuponLabel {
     font-family: AvenirMedium;
     font-size: 18px;
-    color: #A7A7A7;
+    color: #000000;
     letter-spacing: 0;
     text-align: center;
     line-height: 25px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 250px; }
   .kupon .kuponText {
     font-family: AvenirMedium;
@@ -5659,7 +5671,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -11;
+  z-index: 0;
   padding-top: 60px;
   height: 440px;
   max-width: 1000px;
@@ -5694,7 +5706,9 @@ footer {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 3000; }
   @media (min-width: 900px) {
     .jumbotronKontakt .jumboTop {
       margin-top: 80px;
@@ -5760,6 +5774,8 @@ footer {
       font-family: AvenirBook;
       margin-bottom: 30px;
       display: inline-block; }
+      .contentKontakt .seznam ul li a {
+        text-decoration: underline; }
       .contentKontakt .seznam ul li span {
         font-family: AvenirBlack; }
   .contentKontakt .popisekKontakt {
@@ -5774,6 +5790,9 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 370px; }
+    .contentKontakt .popisekKontakt a {
+      font-family: AvenirMedium;
+      text-decoration: underline; }
     .contentKontakt .popisekKontakt span {
       font-family: AvenirBlack;
       display: block; }
@@ -6041,6 +6060,11 @@ footer {
         .faqs ul li .otazka p a {
           text-decoration: underline;
           font-family: AvenirHeavy; }
+      .faqs ul li .otazka .subnadpis {
+        color: black;
+        font-family: AvenirMedium;
+        font-size: 16px;
+        margin-top: 30px; }
     .faqs ul li .zavreno h2::before {
       content: "";
       width: 23px;
