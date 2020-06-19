@@ -5088,6 +5088,42 @@ img {
   background: #fff;
   text-transform: uppercase; }
 
+.eshopBanner {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000000; }
+  .eshopBanner .eshopBannerInner {
+    position: fixed;
+    width: calc(100% - 20px);
+    background: white;
+    z-index: 100000000;
+    top: 150px;
+    left: calc(10px);
+    padding: 20px 0; }
+    .eshopBanner .eshopBannerInner p {
+      font-family: AvenirRoman;
+      text-align: center;
+      margin: 0 10px; }
+      .eshopBanner .eshopBannerInner p a {
+        text-decoration: underline;
+        font-family: AvenirBlack; }
+    .eshopBanner .eshopBannerInner span {
+      text-decoration: underline;
+      color: gray;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      cursor: pointer; }
+
+.eshopBannerOtevrit {
+  display: block; }
+
 header {
   height: 60px;
   width: 100%;

@@ -131,6 +131,14 @@ $('iframe').load( function() {
       .append($("<style type='text/css'>  .i4ewOd-pzNkMb-haAclf {display: none;}  </style>"));
 });
 
+$('a[href="#"]').click(function(){
+  $(".eshopBanner").addClass("eshopBannerOtevrit");
+});
+
+$(".eshopBanner span").click(function(){
+  $(".eshopBanner").removeClass("eshopBannerOtevrit");
+});
+
 
 
 
