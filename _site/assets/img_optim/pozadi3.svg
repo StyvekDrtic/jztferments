@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="1115px" viewBox="0 0 360 1115" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="45.7824905%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#393939" offset="0%"></stop>
+            <stop stop-color="#292929" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 0 360 28.4892778 360 1077.86605 0 1115"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(0.000000, -1302.000000)">
+            <g id="reference" transform="translate(0.000000, 1302.000000)">
+                <g id="Path-2">
+                    <use fill="#FCEEE9" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5287,7 +5287,7 @@ footer {
   padding-top: 60px;
   position: relative; }
   .jumbotron .jumboTop {
-    background: url("../img/pozadi1.jpg");
+    background: url("../img_optim/pozadi1.jpg");
     background-repeat: no-repeat;
     background-position: top;
     height: 440px;
@@ -5695,15 +5695,15 @@ footer {
       margin-top: 100px;
       margin-bottom: 100px; } }
 
-.kontaktBody {
+/img_optim/ .kontaktBody {
   background: #FBFBFB; }
   @media (min-width: 900px) {
-    .kontaktBody {
+    /img_optim/ .kontaktBody {
       background: #fff; } }
 
 .jumbotronKontakt .jumboTop {
   text-align: center;
-  background-image: url("../img/pozadi2.jpg");
+  background-image: url("../img_optim/pozadi2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -6082,7 +6082,7 @@ footer {
           top: 5px;
           right: 0;
           height: 23px;
-          background: url("../img/minus.png");
+          background: url("../img_optim/minus.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
@@ -6108,7 +6108,7 @@ footer {
       top: 5px;
       right: 0;
       height: 23px;
-      background: url("../img/plus.png");
+      background: url("../img_optim/plus.png");
       background-size: contain;
       background-repeat: no-repeat; }
     .faqs ul li .zavreno p {
