@@ -145,8 +145,9 @@ $(".eshopBanner span").click(function(){
 /*
 
 
-$('<li class="homepageOrigo"><a class="menu-item" href="https://demo.jztferments.cz/"><span class="menu-item-text">Homepage</span></a></li>').insertAfter('.level-1 li');
-$('<li class="onasOrigo"><a class="menu-item" href="https://demo.jztferments.cz/onas"><span class="menu-item-text">O nás</span></a></li>').insertAfter('.homepageOrigo');
-$('<li class="kontaktOrigo"><a class="menu-item" href="https://demo.jztferments.cz/kontakt"><span class="menu-item-text">Kontakt</span></a></li>').insertAfter('.onasOrigo');
-$('<li class="faqsOrigo"><a class="menu-item" href="https://demo.jztferments.cz/faqs"><span class="menu-item-text">FAQs</span></a></li>').insertAfter('.kontaktOrigo');
+$('<li class="homepageOrigo"><a class="menu-item" href="https://jztferments.cz/"><span class="menu-item-text">Domů</span></a></li>').insertAfter('.level-1 li');
+$('<li class="onasOrigo"><a class="menu-item" href="https://jztferments.cz/o-nas"><span class="menu-item-text">O nás</span></a></li>').insertAfter('.homepageOrigo');
+$('<li class="kontaktOrigo"><a class="menu-item" href="https://jztferments.cz/kontakt"><span class="menu-item-text">Kontakt</span></a></li>').insertAfter('.onasOrigo');
+$('<li class="kdeNasNajdeteOrigo"><a class="menu-item" href="https://jztferments.cz/kde-nas-najdete"><span class="menu-item-text">Kde nás najdete?</span></a></li>').insertAfter('.kontaktOrigo');
+$('<li class="faqsOrigo"><a class="menu-item" href="https://jztferments.cz/faqs"><span class="menu-item-text">FAQs</span></a></li>').insertAfter('.kdeNasNajdeteOrigo');
 */
