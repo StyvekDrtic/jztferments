@@ -5811,7 +5811,8 @@ footer {
       margin-bottom: 30px;
       display: inline-block; }
       .contentKontakt .seznam ul li a {
-        text-decoration: underline; }
+        font-family: AvenirBlack;
+        text-decoration: none; }
       .contentKontakt .seznam ul li span {
         font-family: AvenirBlack; }
   .contentKontakt .popisekKontakt {
