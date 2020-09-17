@@ -105,3 +105,50 @@
     margin: 0 auto;
   }
 }
+
+.infografika {
+  max-width: 360px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: url("../img/infografika.png");
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: auto;
+  overflow: hidden;
+
+
+  .blok {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    background: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    .obrazek {
+      width: calc(100% - 30px);
+      height: 300px;
+      margin: 0 auto;
+      background: gray;
+    }
+
+    .popisek {
+      text-align: center;
+
+      p {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        font-size: 21px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-family: AvenirBlack;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

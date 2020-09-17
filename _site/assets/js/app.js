@@ -140,7 +140,7 @@ $(".eshopBanner span").click(function(){
 });
 
 
-
+new WOW().init();
 
 /*
 
@@ -150,4 +150,15 @@ $('<li class="onasOrigo"><a class="menu-item" href="https://jztferments.cz/o-nas
 $('<li class="kontaktOrigo"><a class="menu-item" href="https://jztferments.cz/kontakt"><span class="menu-item-text">Kontakt</span></a></li>').insertAfter('.onasOrigo');
 $('<li class="kdeNasNajdeteOrigo"><a class="menu-item" href="https://jztferments.cz/kde-nas-najdete"><span class="menu-item-text">Kde nás najdete?</span></a></li>').insertAfter('.kontaktOrigo');
 $('<li class="faqsOrigo"><a class="menu-item" href="https://jztferments.cz/faqs"><span class="menu-item-text">FAQs</span></a></li>').insertAfter('.kdeNasNajdeteOrigo');
+
+
+$(".wt-home .logo").css("cursor", "pointer");
+$(".wt-home .logo").click(function(){
+  window.location.href = "https://jztferments.cz/";
+});
+
+
+$(".product-price-content").html(function(i, html){
+  return html.replace(",00", "");
+});
 */
