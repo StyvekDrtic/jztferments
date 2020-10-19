@@ -107,7 +107,7 @@
 }
 
 .infografika {
-  max-width: 360px;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 100px;
   background: url("../img/infografika.png");
@@ -124,11 +124,27 @@
     padding-bottom: 20px;
     padding-top: 20px;
 
-    .obrazek {
+    .ilustrace {
       width: calc(100% - 30px);
-      height: 300px;
+      position: relative;
+      height: auto;
       margin: 0 auto;
-      background: gray;
+      padding-bottom: 70%;
+      max-width: 400px;
+
+      img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      @media (min-width: 900px) {
+        order: 2;
+        margin: 0;
+        padding-bottom: 0;
+        height: 300px;
+      }
     }
 
     .popisek {
@@ -140,15 +156,55 @@
         font-size: 21px;
         margin-top: 20px;
         margin-bottom: 10px;
+        color: #c87231;
+
+        @media (min-width: 900px) {
+          margin: 0;
+          margin-bottom: 20px;
+        }
       }
 
       span {
         font-family: AvenirBlack;
+        color: #4b2415;
+      }
+
+      a {
+        img {
+          height: 60px;
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: 900px) {
+        order: 1;
+        text-align: left;
+        width: 400px;
       }
     }
 
     &:last-child {
       margin-bottom: 0;
+
+      .ilustrace {
+        padding-bottom: 44%;
+
+        @media (min-width: 900px) {
+          padding-bottom: 0;
+          height: 250px;
+        }
+      }
     }
+
+    @media (min-width: 900px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: calc(100% - 200px);
+    }
+  }
+
+  @media (min-width: 900px) {
+    max-width: 950px;
   }
 }

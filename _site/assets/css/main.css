@@ -5066,6 +5066,9 @@ fonts
 defaults
 
 *****************************************/
+:root {
+  --animate-duration: 3s; }
+
 h1, h2, h3, h4, h5, p, span, a {
   font-weight: normal !important;
   font-family: AvenirBook;
@@ -6003,7 +6006,7 @@ footer {
     margin: 0 auto; } }
 
 .infografika {
-  max-width: 360px;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 100px;
   background: url("../img/infografika.png");
@@ -6017,11 +6020,24 @@ footer {
     background: white;
     padding-bottom: 20px;
     padding-top: 20px; }
-    .infografika .blok .obrazek {
+    .infografika .blok .ilustrace {
       width: calc(100% - 30px);
-      height: 300px;
+      position: relative;
+      height: auto;
       margin: 0 auto;
-      background: gray; }
+      padding-bottom: 70%;
+      max-width: 400px; }
+      .infografika .blok .ilustrace img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      @media (min-width: 900px) {
+        .infografika .blok .ilustrace {
+          order: 2;
+          margin: 0;
+          padding-bottom: 0;
+          height: 300px; } }
     .infografika .blok .popisek {
       text-align: center; }
       .infografika .blok .popisek p {
@@ -6029,11 +6045,40 @@ footer {
         margin: 0 auto;
         font-size: 21px;
         margin-top: 20px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        color: #c87231; }
+        @media (min-width: 900px) {
+          .infografika .blok .popisek p {
+            margin: 0;
+            margin-bottom: 20px; } }
       .infografika .blok .popisek span {
-        font-family: AvenirBlack; }
+        font-family: AvenirBlack;
+        color: #4b2415; }
+      .infografika .blok .popisek a img {
+        height: 60px;
+        margin-top: 20px; }
+      @media (min-width: 900px) {
+        .infografika .blok .popisek {
+          order: 1;
+          text-align: left;
+          width: 400px; } }
     .infografika .blok:last-child {
       margin-bottom: 0; }
+      .infografika .blok:last-child .ilustrace {
+        padding-bottom: 44%; }
+        @media (min-width: 900px) {
+          .infografika .blok:last-child .ilustrace {
+            padding-bottom: 0;
+            height: 250px; } }
+    @media (min-width: 900px) {
+      .infografika .blok {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 200px); } }
+  @media (min-width: 900px) {
+    .infografika {
+      max-width: 950px; } }
 
 @media (min-width: 900px) {
   .jumbotronFaqs2 {
