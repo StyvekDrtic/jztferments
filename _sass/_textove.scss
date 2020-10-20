@@ -160,13 +160,14 @@
 
         @media (min-width: 900px) {
           margin: 0;
-          margin-bottom: 20px;
+          margin-top: 20px;
         }
       }
 
       span {
         font-family: AvenirBlack;
         color: #4b2415;
+        font-size: 18px;
       }
 
       a {
@@ -206,5 +207,22 @@
 
   @media (min-width: 900px) {
     max-width: 950px;
+  }
+}
+
+
+
+// neni muj kod
+
+@media (min-width: 900px) {
+  .infografika .blok {
+    overflow:hidden;
+  }
+  .infografika .blok .ilustrace {
+    max-width: 500px;
+    height: 375px;
+  }
+  .popisek {
+    width: 300px;
   }
 }

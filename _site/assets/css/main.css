@@ -6050,10 +6050,11 @@ footer {
         @media (min-width: 900px) {
           .infografika .blok .popisek p {
             margin: 0;
-            margin-bottom: 20px; } }
+            margin-top: 20px; } }
       .infografika .blok .popisek span {
         font-family: AvenirBlack;
-        color: #4b2415; }
+        color: #4b2415;
+        font-size: 18px; }
       .infografika .blok .popisek a img {
         height: 60px;
         margin-top: 20px; }
@@ -6080,6 +6081,16 @@ footer {
     .infografika {
       max-width: 950px; } }
 
+@media (min-width: 900px) {
+  .infografika .blok {
+    overflow: hidden; }
+
+  .infografika .blok .ilustrace {
+    max-width: 500px;
+    height: 375px; }
+
+  .popisek {
+    width: 300px; } }
 @media (min-width: 900px) {
   .jumbotronFaqs2 {
     background: #ecd4997a !important; } }
