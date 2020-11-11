@@ -106,10 +106,21 @@
   }
 }
 
+.infografikaNadpis {
+  font-family: AvenirMedium;
+  font-size: 28px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  max-width: 930px;
+  text-align: center;
+}
+
 .infografika {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 10px;
   background: url("../img/infografika.png");
   background-position: center top;
   background-repeat: repeat-y;

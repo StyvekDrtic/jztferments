@@ -61,6 +61,19 @@ $('.mobileProduktyInner').slick({
   centerPadding: '70px',
 });
 
+$('.citaty').slick({
+  infinite: true,
+  variableWidth: true,
+  dots: false,
+  centerMode: true,
+  arrows: true,
+  initialSlide: 0,
+  centerPadding: '100px',
+});
+
+$('.slick-prev').text("předchozí");
+$('.slick-next').text("další");
+
 
 // faqs
 

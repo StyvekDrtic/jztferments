@@ -5154,7 +5154,7 @@ header {
       display: block;
       text-align: center;
       position: relative;
-      left: -50px;
+      left: 43px;
       top: 18px; }
       header .desktopHeader .desktopNav li {
         list-style: none;
@@ -5293,13 +5293,13 @@ footer {
     background: url("../img_optim/pozadi1.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    height: 440px;
+    height: 540px;
     text-align: center;
     background-size: 120%; }
     .jumbotron .jumboTop .prouzek {
       height: 39px;
       position: absolute;
-      bottom: 0px;
+      bottom: 45px;
       left: -15px;
       width: calc(100% + 30px);
       opacity: 0.8;
@@ -5321,7 +5321,7 @@ footer {
       color: #000000;
       text-align: center;
       padding-top: 50px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       max-width: 400px;
       width: 100%;
       z-index: 1;
@@ -5333,8 +5333,23 @@ footer {
         .jumbotron .jumboTop h1 {
           font-size: 50px;
           max-width: none;
-          margin-bottom: 55px;
+          margin-bottom: 15px;
           padding-top: 110px; } }
+    .jumbotron .jumboTop h2 {
+      margin: 0 auto;
+      font-family: AvenirMedium;
+      font-size: 20px;
+      color: #000000;
+      text-align: center;
+      margin-bottom: 60px;
+      max-width: 320px;
+      width: 100%;
+      z-index: 1;
+      position: relative; }
+      @media (min-width: 900px) {
+        .jumbotron .jumboTop h2 {
+          font-size: 25px;
+          max-width: none; } }
     @media (min-width: 900px) {
       .jumbotron .jumboTop {
         max-width: 1000px;
@@ -5520,11 +5535,41 @@ footer {
     margin-top: 15px; }
   .reference .citaty {
     margin-bottom: 30px;
-    text-align: left; }
+    text-align: left;
+    position: relative;
+    overflow: hidden; }
+    .reference .citaty .slick-prev {
+      position: absolute;
+      bottom: 15px;
+      left: 40px;
+      background: url("https://www.plnyspajz.cz/Themes/SimplexTheme/Content/images/previous-arrow.png") no-repeat scroll 0px 15px;
+      border: 0;
+      color: #999;
+      line-height: 20px;
+      float: left;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 10px 12px 25px !important;
+      text-transform: uppercase;
+      z-index: 1; }
+    .reference .citaty .slick-next {
+      position: absolute;
+      bottom: 15px;
+      right: 40px;
+      background: url("https://www.plnyspajz.cz/Themes/SimplexTheme/Content/images/next-arrow.png") no-repeat 62px 15px;
+      border: 0;
+      color: #999;
+      float: left;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 12px 25px 12px 10px !important;
+      text-transform: uppercase;
+      z-index: 1; }
     .reference .citaty .citat {
-      width: calc(100% - 40px);
-      max-width: 360px;
-      margin: 0 auto; }
+      width: calc(100vw - 40px);
+      max-width: 300px;
+      margin: 0 20px; }
       .reference .citaty .citat:first-child {
         margin-bottom: 30px;
         margin-top: 50px; }
@@ -5567,10 +5612,7 @@ footer {
           margin-left: 15px; }
     @media (min-width: 900px) {
       .reference .citaty {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 800px;
+        max-width: none;
         margin: 0 auto; } }
   .reference .pozadi {
     width: 100%;
@@ -5582,7 +5624,8 @@ footer {
 
 .delameToPoctive {
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 100px;
+  margin-bottom: 50px; }
   .delameToPoctive .delameToPoctiveInner {
     width: calc(100% - 30px);
     margin: 0 auto; }
@@ -5653,7 +5696,8 @@ footer {
       max-width: 900px;
       width: calc(100% - 50px);
       margin: 0 auto;
-      margin-top: 100px; } }
+      margin-top: 60px;
+      margin-bottom: 60px; } }
   @media (min-width: 1100px) {
     .delameToPoctive {
       max-width: 950px; } }
@@ -5698,6 +5742,23 @@ footer {
       margin-top: 100px;
       margin-bottom: 100px; } }
 
+.barlife {
+  width: calc(100% - 50px - 40px);
+  max-width: 950px;
+  margin: 30px auto;
+  margin-top: 60px;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px; }
+  .barlife p {
+    font-family: AvenirBook;
+    font-size: 18px; }
+  .barlife span {
+    font-family: AvenirMedium;
+    font-size: 16px; }
+
 /img_optim/ .kontaktBody {
   background: #FBFBFB; }
   @media (min-width: 900px) {
@@ -5712,7 +5773,7 @@ footer {
   position: relative;
   z-index: 0;
   padding-top: 60px;
-  height: 440px;
+  height: 130px;
   max-width: 1000px;
   margin: 0 auto; }
   .jumbotronKontakt .jumboTop::before {
@@ -5740,7 +5801,8 @@ footer {
       .jumbotronKontakt .jumboTop h1 {
         font-size: 57px;
         padding-top: 55px;
-        margin-top: 0; } }
+        margin-top: 0;
+        margin: 0 auto; } }
   .jumbotronKontakt .jumboTop a {
     display: block;
     width: fit-content;
@@ -5757,46 +5819,71 @@ footer {
       height: auto;
       padding-bottom: 60px;
       background-position: 50% 43%; } }
-.jumbotronKontakt .jumboBot {
-  margin: 0 auto;
-  margin-top: -160px;
-  background: #fff;
-  width: calc(100% - 30px);
-  max-width: 330px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
-  border-radius: 5px;
-  position: relative;
-  padding: 10px 0; }
-  .jumbotronKontakt .jumboBot img {
-    position: absolute;
-    width: 80px;
-    right: 30px;
-    top: calc(50% - 90px/2); }
-    @media (max-width: 345px) {
-      .jumbotronKontakt .jumboBot img {
-        width: 60px;
-        right: 20px;
-        top: calc(50% - 67px/2); } }
-  .jumbotronKontakt .jumboBot div {
-    display: inline-block;
-    margin-left: 30px; }
-    .jumbotronKontakt .jumboBot div p {
-      font-family: AvenirMedium;
-      font-size: 16px;
-      color: #000000;
-      letter-spacing: 0;
-      line-height: 25px; }
-      .jumbotronKontakt .jumboBot div p span {
-        font-family: AvenirHeavy; }
-    @media (max-width: 345px) {
-      .jumbotronKontakt .jumboBot div {
-        margin-left: 20px; } }
-  @media (min-width: 900px) {
-    .jumbotronKontakt .jumboBot {
-      display: none; } }
 
 .contentKontakt {
-  text-align: center; }
+  width: calc(100% - 50px);
+  max-width: 600px;
+  margin: 0 auto; }
+  @media (min-width: 900px) {
+    .contentKontakt {
+      max-width: 730px; } }
+  .contentKontakt .jumboBot {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: #fff;
+    width: calc(100% - 30px);
+    max-width: 330px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 0; }
+    .contentKontakt .jumboBot img {
+      position: absolute;
+      width: 80px;
+      right: 30px;
+      top: calc(50% - 90px/2); }
+      @media (max-width: 400px) {
+        .contentKontakt .jumboBot img {
+          width: 60px;
+          right: 20px;
+          top: calc(50% - 67px/2); } }
+    .contentKontakt .jumboBot div {
+      display: inline-block;
+      margin-left: 30px; }
+      .contentKontakt .jumboBot div p {
+        font-family: AvenirMedium;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 25px; }
+        .contentKontakt .jumboBot div p span {
+          font-family: AvenirHeavy; }
+      @media (max-width: 345px) {
+        .contentKontakt .jumboBot div {
+          margin-left: 20px; } }
+    @media (min-width: 900px) {
+      .contentKontakt .jumboBot {
+        display: none; } }
+  .contentKontakt .kontakty {
+    padding: 0; }
+    @media (min-width: 900px) {
+      .contentKontakt .kontakty {
+        display: flex;
+        justify-content: space-between; } }
+    .contentKontakt .kontakty li {
+      list-style: none;
+      margin: 30px 0; }
+      .contentKontakt .kontakty li span {
+        text-align: center;
+        display: block;
+        font-family: AvenirBlack;
+        margin-bottom: 10px; }
+        @media (min-width: 900px) {
+          .contentKontakt .kontakty li span {
+            text-align: left; } }
+        .contentKontakt .kontakty li span a {
+          font-family: AvenirBook;
+          text-decoration: underline; }
   .contentKontakt .seznam ul {
     padding: 0;
     max-width: 605px;
@@ -5842,35 +5929,37 @@ footer {
         margin: 0;
         margin-top: 30px;
         max-width: none; } }
-  .contentKontakt .mapa h2 {
-    font-family: AvenirMedium;
-    font-size: 23px;
-    color: #000000;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 34px; }
-    @media (min-width: 900px) {
-      .contentKontakt .mapa h2 {
-        font-size: 28px;
-        line-height: 34px;
-        margin-bottom: 40px; } }
-  .contentKontakt .mapa div {
-    width: 100%;
-    height: 500px;
-    background: gray; }
-    .contentKontakt .mapa div iframe {
+  .contentKontakt .mapa {
+    margin-top: 30px; }
+    .contentKontakt .mapa h2 {
+      font-family: AvenirMedium;
+      font-size: 23px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 34px; }
+      @media (min-width: 900px) {
+        .contentKontakt .mapa h2 {
+          font-size: 28px;
+          line-height: 34px;
+          margin-bottom: 40px; } }
+    .contentKontakt .mapa div {
       width: 100%;
-      height: 100%;
-      border: 0; }
+      height: 500px;
+      background: gray; }
+      .contentKontakt .mapa div iframe {
+        width: 100%;
+        height: 100%;
+        border: 0; }
+      @media (min-width: 900px) {
+        .contentKontakt .mapa div {
+          border-radius: 5px;
+          max-width: 950px;
+          margin: 0 auto;
+          width: calc(100% - 50px); } }
     @media (min-width: 900px) {
-      .contentKontakt .mapa div {
-        border-radius: 5px;
-        max-width: 950px;
-        margin: 0 auto;
-        width: calc(100% - 50px); } }
-  @media (min-width: 900px) {
-    .contentKontakt .mapa {
-      margin-top: 40px; } }
+      .contentKontakt .mapa {
+        margin-top: 40px; } }
 
 .desktopVizitka {
   display: none;
@@ -6005,10 +6094,20 @@ footer {
     max-width: 950px;
     margin: 0 auto; } }
 
+.infografikaNadpis {
+  font-family: AvenirMedium;
+  font-size: 28px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  max-width: 930px;
+  text-align: center; }
+
 .infografika {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 10px;
   background: url("../img/infografika.png");
   background-position: center top;
   background-repeat: repeat-y;

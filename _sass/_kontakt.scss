@@ -15,7 +15,7 @@
     position: relative;
     z-index: 0;
     padding-top: 60px;
-    height: 440px;
+    height: 130px;
     max-width: 1000px;
     margin: 0 auto;
 
@@ -48,6 +48,7 @@
         font-size: 57px;
         padding-top: 55px;
         margin-top: 0;
+        margin: 0 auto;
       }
     }
 
@@ -70,10 +71,22 @@
       background-position: 50% 43%;
     }
   }
+}
+
+.contentKontakt {
+
+  width: calc(100% - 50px);
+  max-width: 600px;
+  margin: 0 auto;
+
+  @media (min-width: 900px) {
+    max-width: 730px;
+  }
+
 
   .jumboBot {
     margin: 0 auto;
-    margin-top: -160px;
+    margin-bottom: 50px;
     background: #fff;
     width: calc(100% - 30px);
     max-width: 330px;
@@ -88,7 +101,7 @@
       right: 30px;
       top: calc(50% - 90px/2);
 
-      @media (max-width: 345px) {
+      @media (max-width: 400px) {
         width: 60px;
         right: 20px;
         top: calc(50% - 67px/2);
@@ -120,10 +133,36 @@
       display: none;
     }
   }
-}
 
-.contentKontakt {
-  text-align: center;
+  .kontakty {
+    padding: 0;
+
+    @media (min-width: 900px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      list-style: none;
+      margin: 30px 0;
+
+      span {
+        text-align: center;
+        display: block;
+        font-family: AvenirBlack;
+        margin-bottom: 10px;
+
+        @media (min-width: 900px) {
+          text-align: left;
+        }
+
+        a {
+          font-family: AvenirBook;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 
   .seznam {
     ul {
@@ -188,7 +227,7 @@
   }
 
   .mapa {
-
+    margin-top: 30px;
     h2 {
       font-family: AvenirMedium;
       font-size: 23px;
